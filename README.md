@@ -23,8 +23,7 @@ https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pokémon)
 
 Click the extension icon in the toolbar.
 
-In the popup, click the button corresponding to the section you want to jump to (e.g., Base Stats or Top of Page).
+In the popup, click the button corresponding to the section you want to jump to. The page will scroll smoothly to the selected section.
 
-The page will scroll smoothly to the selected section.
-
-Note: The extension is only active on Bulbapedia Pokémon pages. On other sites, the icon is grayed out.
+## Credits
+Created by Ayaan Modak
