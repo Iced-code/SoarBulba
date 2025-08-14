@@ -4,14 +4,14 @@ document.querySelectorAll(".sectionButton").forEach(button => {
         let sectionId = button.value;
         let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-        if (tab.url && tab.url.includes("https://bulbapedia.bulbagarden.net/wiki/") && tab.url.includes("_(Pok%C3%A9mon)")) {
+        if (tab.url && tab.url.includes("https://bulbapedia.bulbagarden.net/wiki/") && tab.url.endsWith("_(Pok%C3%A9mon)")) {
             chrome.scripting.executeScript({
                 target: { tabId: tab.id },
                 func: scrollToSection,
                 args: [sectionId]
             });
         } else {
-            alert("This is not a Bulbapedia Pokémon page.");
+            alert("This is not a Bulbapedia Pokemon page.");
         }
     });
 })
