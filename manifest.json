@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "SoarBulba",
+  "version": "1.0",
+  "description": "Quick navigate across Bulbagarden.",
+  "permissions": ["scripting", "activeTab", "sidePanel"],
+  "action": {
+    "default_title": "Jump to Pokemon Game Data",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon2.png",
+    "48": "icon2.png",
+    "128": "icon2.png"
+  }
+}
