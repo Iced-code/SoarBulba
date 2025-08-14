@@ -10,7 +10,7 @@ A Chrome extension that lets you quickly navigate to the most commonly used sect
 git clone https://github.com/Iced-code/SoarBulba.git
 
 ```
-2. Open Chrome and go to [](chrome://extensions/).
+2. Open Chrome and go to [chrome://extensions/](chrome://extensions/).
 
 3. Enable Developer mode (toggle in the top right).
 
