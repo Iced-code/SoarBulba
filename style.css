@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
   padding: 10px;
-  width: 200px;
+  width: 230px;
+  height: 250px;
   background-color: #f8f8f8;
 }
 
@@ -9,6 +10,7 @@ button {
   width: 100%;
   padding: 8px;
   margin: 4px 0;
+  margin-bottom: 12px;
   font-size: 14px;
   cursor: pointer;
   border: none;
@@ -16,7 +18,7 @@ button {
   background-color: #1252ac;
   color: white;
   font-weight: bold;
-  transition: background-color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 button:hover {
@@ -25,6 +27,6 @@ button:hover {
 }
 
 #credits {
-    font-size: 2;
-    color: rgb(173, 173, 173);
+  font-size: 8px;
+  color: rgb(173, 173, 173);
 }
