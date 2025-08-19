@@ -6,6 +6,14 @@ body {
   background-color: #f8f8f8;
 }
 
+body.light {
+  background-color: #f8f8f8;
+}
+
+body.dark {
+  background-color: rgb(21, 26, 39);
+}
+
 button {
   width: 100%;
   padding: 8px;

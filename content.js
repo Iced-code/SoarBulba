@@ -31,3 +31,11 @@ function scrollToSection(sectionName) {
         alert("Error. Please try redownloading.");
     }
 }
+
+/* document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("toggleMode").addEventListener("click", toggleMode);
+});
+function toggleMode(){
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+} */
