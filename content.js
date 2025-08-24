@@ -1,5 +1,6 @@
 
 document.querySelectorAll(".sectionButton").forEach(button => {
+
     button.addEventListener("click", async () => {
         let sectionId = button.value;
         let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -11,10 +12,11 @@ document.querySelectorAll(".sectionButton").forEach(button => {
                 args: [sectionId]
             });
         } else {
-            alert("This is not a Bulbapedia Pokemon page.");
+            alert("This is not a Pokemon Bulbapedia page.");
         }
     });
 })
+
 
 
 function scrollToSection(sectionName) {
@@ -32,10 +34,10 @@ function scrollToSection(sectionName) {
     }
 }
 
-/* document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("toggleMode").addEventListener("click", toggleMode);
 });
 function toggleMode(){
-    document.body.classList.toggle("dark");
     document.body.classList.toggle("light");
-} */
+    document.body.classList.toggle("dark");
+}
