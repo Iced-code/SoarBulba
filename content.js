@@ -1,6 +1,5 @@
 
 document.querySelectorAll(".sectionButton").forEach(button => {
-
     button.addEventListener("click", async () => {
         let sectionId = button.value;
         let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -42,9 +41,28 @@ function scrollToSection(sectionName) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    /* let webTheme = JSON.parse(localStorage.getItem("theme")) || [];
+    alert(webTheme);
+
+    if(webTheme[0] === "light"){
+        document.body.classList = [];
+        document.body.classList.add("light");
+    }
+    else if(webTheme[0] === "dark"){
+        document.body.classList = [];
+        document.body.classList.add("dark");
+    } */
+
     document.getElementById("toggleMode").addEventListener("click", toggleMode);
+
+    
+
+    //let lastChannels = JSON.parse(localStorage.getItem('lastWatchedChannels')) || [];
 });
 function toggleMode(){
     document.body.classList.toggle("light");
     document.body.classList.toggle("dark");
+
+    /* let theme = document.body.classList;
+    localStorage.setItem("theme", theme); */
 }
