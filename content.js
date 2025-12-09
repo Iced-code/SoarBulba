@@ -28,7 +28,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 function scrollToSection(sectionName) {
     const section = document.querySelector(`#${sectionName}`);
 
-    
     if(sectionName === "START"){
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -62,6 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMode(){
     document.body.classList.toggle("light");
     document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("light")){
+        document.getElementById("toggleMode").innerHTML = "&#128161;";
+    }
+    else {
+        document.getElementById("toggleMode").innerHTML = "&#x1F319;";
+    }
 
     /* let theme = document.body.classList;
     localStorage.setItem("theme", theme); */
