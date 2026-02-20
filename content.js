@@ -39,36 +39,34 @@ function scrollToSection(sectionName) {
     }
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
-    /* let webTheme = JSON.parse(localStorage.getItem("theme")) || [];
-    alert(webTheme);
+    let webTheme = localStorage.getItem("theme") || "";
+    document.body.classList = [webTheme];
 
-    if(webTheme[0] === "light"){
-        document.body.classList = [];
-        document.body.classList.add("light");
+    if(webTheme === "dark"){
+        document.getElementById("toggleMode").innerHTML = "&#x1F319;";
     }
-    else if(webTheme[0] === "dark"){
-        document.body.classList = [];
-        document.body.classList.add("dark");
-    } */
-
-    document.getElementById("toggleMode").addEventListener("click", toggleMode);
-
+    else {
+        document.body.classList = ["light"];
+        document.getElementById("toggleMode").innerHTML = "&#128161;";
+    }
     
-
-    //let lastChannels = JSON.parse(localStorage.getItem('lastWatchedChannels')) || [];
+    document.getElementById("toggleMode").addEventListener("click", toggleMode);
 });
 function toggleMode(){
     document.body.classList.toggle("light");
     document.body.classList.toggle("dark");
 
+    let theme = "";
     if(document.body.classList.contains("light")){
         document.getElementById("toggleMode").innerHTML = "&#128161;";
+        theme = "light";
     }
     else {
         document.getElementById("toggleMode").innerHTML = "&#x1F319;";
+        theme = "dark";
     }
 
-    /* let theme = document.body.classList;
-    localStorage.setItem("theme", theme); */
+    localStorage.setItem("theme", theme);
 }
