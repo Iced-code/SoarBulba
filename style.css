@@ -23,15 +23,41 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background-color: #3e7614/* #1252ac */;
   color: white;
   font-weight: bold;
   transition: 0.2s ease;
 }
 
 button:hover {
-  background-color: #264a0b;
   scale: 105%;
+}
+
+#main .colorButton.green, .green button {
+  background-color: #3e7614;
+}
+.green button:hover {
+  background-color: #264a0b;
+}
+
+#main .colorButton.red, .red button {
+  background-color: #761414;
+}
+.red button:hover {
+  background-color: #4a0b0b;
+}
+
+#main .colorButton.blue, .blue button {
+  background-color: #144776;
+}
+.blue button:hover {
+  background-color: #0b204a;
+}
+
+#main .colorButton.yellow, .yellow button {
+  background-color: goldenrod;
+}
+.yellow button:hover {
+  background-color: #9d7717;
 }
 
 #credits {
@@ -43,7 +69,7 @@ button:hover {
   color: #6d6d6d;
 }
 
-#toggleMode, #toggleMode button {
+#toggleMode, #options {
   width: 10%;
   padding: 4px 1px;
   margin: 0px;
@@ -55,9 +81,21 @@ button:hover {
   background-color: transparent;
 }
 
-body.light #toggleMode:hover {
+#options a, a:visited {
+  text-decoration: none;
+}
+
+
+body.light #options {
+  color: #29324a;
+}
+body.dark #options {
+  color: #b7b7b7;
+}
+
+body.light #toggleMode:hover, body.light #options:hover {
   background-color: #b7b7b7;
 }
-body.dark #toggleMode:hover {
+body.dark #toggleMode:hover, body.dark #options:hover {
   background-color: #29324a;
 }

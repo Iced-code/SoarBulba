@@ -8,6 +8,10 @@
     "default_title": "Jump to Pokemon Game Data",
     "default_popup": "popup.html"
   },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
