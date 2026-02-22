@@ -3,7 +3,7 @@
   "name": "SoarBulba",
   "version": "1.0",
   "description": "Quick navigate across Pokemon Bulbapedia pages.",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting", "activeTab", "declarativeNetRequest"],
   "action": {
     "default_title": "Jump to Pokemon Game Data",
     "default_popup": "popup.html"
@@ -11,6 +11,13 @@
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
   },
   "icons": {
     "16": "icon.png",
