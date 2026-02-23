@@ -8,10 +8,6 @@
     "default_title": "Jump to Pokemon Game Data",
     "default_popup": "popup.html"
   },
-  "options_ui": {
-    "page": "options.html",
-    "open_in_tab": true
-  },
   "declarative_net_request": {
     "rule_resources": [{
       "id": "ruleset_1",
