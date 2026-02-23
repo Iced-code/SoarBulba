@@ -34,6 +34,7 @@ document.querySelectorAll(".sectionButton").forEach(button => {
     });
 })
 
+
 document.querySelectorAll(".colorButton").forEach(button => {
     button.addEventListener("click", async () => {
         let color = button.value;
@@ -76,4 +77,5 @@ function toggleMode(){
 
 function editOptions(){
     document.getElementById("colorSelect").classList.toggle("option-mode");
+    document.getElementById("credits").classList.toggle("option-mode");
 }
