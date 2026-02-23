@@ -78,7 +78,6 @@ button:hover {
 #toggleMode, #options {
   width: 10%;
   padding: 4px 1px;
-  margin: 0px;
   margin-bottom: 8px;
   font-size: 14px;
   cursor: pointer;

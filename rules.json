@@ -25,5 +25,32 @@
             "urlFilter": "ads.pubmatic.com",
             "resourceTypes": ["script", "image", "sub_frame"]
         }
+    },
+    {
+        "id": 4,
+        "priority": 4,
+        "action": {"type": "block"},
+        "condition": {
+            "urlFilter": "kargo.com",
+            "resourceTypes": ["script", "image", "sub_frame"]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 5,
+        "action": {"type": "block"},
+        "condition": {
+            "urlFilter": "3lift.com",
+            "resourceTypes": ["script", "image", "sub_frame"]
+        }
+    },
+    {
+        "id": 6,
+        "priority": 6,
+        "action": {"type": "block"},
+        "condition": {
+            "urlFilter": "ads.adthrive.com",
+            "resourceTypes": ["script", "image", "sub_frame"]
+        }
     }
 ]
